@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# This script is acessable at this link: https://playantares.com/scripts/initial-setup-ubuntu.sh
+
 sudo apt update
 sudo apt upgrade -y
 sudo apt install unattended-upgrades -y
