@@ -6,9 +6,6 @@
 # Note: Servers usually expect a static ip address, and since this is using dhclient, you must set that static ip on your router
 # or you risk getting a new ip on each boot.
 
-# Create rc.local file if it does not already exist
-sudo nano /etc/rc.local
-
 # Update rc.local's permissions
 sudo chmod 755 /etc/rc.local
 
