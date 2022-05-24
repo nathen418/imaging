@@ -2,7 +2,7 @@
 
 # This script is acessable at this link: https://playantares.com/scripts/upgrade-to-latest.sh
 
-echo -e "\e[31mTHIS SCRIPT REQUIRES YOU TO ANSWER PROMPTS, IT IS NOT UNATENDED!. Press any key to continue.\e[0m"
+echo -e "\e[31mTHIS SCRIPT REQUIRES YOU TO ANSWER PROMPTS, IT IS NOT UNATENDED!. Sleeping for 10 seconds.\e[0m"
 sleep 10
 sudo apt-get update
 sudo apt-get upgrade -y
