@@ -11,6 +11,11 @@ sudo apt autoremove -y
 sudo apt install openssh-server git speedtest-cli fail2ban unattended-upgrades glances -y
 sudo snap install bashtop
 
+# Update again
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoremove -y
+
 # Disable root login
 sudo passwd -l root
 
@@ -36,6 +41,11 @@ sudo cp /etc/fail2ban/fail2ban.{conf,local}
 sudo cp /etc/fail2ban/jail.{conf,local}
 sudo sed -i "/^[^#]*backend = auto/c\backend = systemd" /etc/fail2ban/jail.local
 sudo systemctl restart fail2ban
+
+# Update one more time
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoremove -y
 
 # Exit script
 echo "Script completed!"
