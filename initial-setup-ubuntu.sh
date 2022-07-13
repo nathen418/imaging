@@ -10,9 +10,6 @@ sudo apt upgrade -y
 sudo apt install openssh-server git speedtest-cli fail2ban unattended-upgrades glances -y
 sudo snap install bashtop
 
-# Reconfigure unattended-upgrades
-sudo dpkg-reconfigure --priority=low unattended-upgrades
-
 # Disable root login
 sudo passwd -l root
 
