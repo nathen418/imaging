@@ -21,7 +21,6 @@ sudo passwd -l root
 
 # Disable password login over ssh
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
-sudo service sshd restart
 
 # Extend ubuntu default fs to fill the disk
 sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
@@ -40,7 +39,6 @@ echo "y" | sudo ufw enable
 sudo cp /etc/fail2ban/fail2ban.{conf,local}
 sudo cp /etc/fail2ban/jail.{conf,local}
 sudo sed -i "/^[^#]*backend = auto/c\backend = systemd" /etc/fail2ban/jail.local
-sudo systemctl restart fail2ban
 
 # Update one more time
 sudo apt update
