@@ -8,7 +8,7 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Install common packages
-sudo apt install openssh-server git speedtest-cli fail2ban unattended-upgrades glances -y
+sudo apt install openssh-server git speedtest-cli fail2ban  glances -y
 sudo snap install bashtop
 
 # Update again
