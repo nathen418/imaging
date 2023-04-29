@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "Hello"
-
-read -p "This script will configure a VM from a template. Do you wish to continue? (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+echo "Hello, this script will configure a VM from a template."
+echo "Updating"
 
 # Update & Upgrade
 sudo apt update
