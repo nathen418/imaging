@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Hello"
+
 read -p "This script will configure a VM from a template. Do you wish to continue? (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 
 # Update & Upgrade
