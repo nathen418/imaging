@@ -3,7 +3,7 @@
 # This script is acessable at this link: https://playantares.com/scripts/initial-setup-ubuntu.sh
 
 # Prevent annoying needs restart popup 
-sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
+sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
 
 # Update & Upgrade
 sudo apt update
