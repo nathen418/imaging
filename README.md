@@ -9,8 +9,10 @@
 ## How to run these scripts yourself:
 - Clone this repository and run the script yourself or
 ```bash
-sudo curl -s -L INSERT_SCRIPT_URL_HERE | bash
+sudo su -c "bash <(wget -qO- INSERT_SCRIPT_URL_HERE)" root  
 ```
+THIS IS EXTREMELY DANGEROUS. DO NOT DO THIS UNLESS YOU TRUST THE SCRIPT WRITER.  
+
 
 ## Credits:
 - [Nate](https://github.com/nathen418)
