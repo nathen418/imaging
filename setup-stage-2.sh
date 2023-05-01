@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is acessable at this link: https://antaresnetwork.com/scripts/setup-stage-2.sh
+
 echo "Hello, this script will configure a VM from a template."
 echo "Updating"
 
