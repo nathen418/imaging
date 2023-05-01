@@ -4,7 +4,6 @@ read -p "Are you sure? (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY
 read -p "Really? This is the last chance to quit. (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 sudo apt-get purge -y docker.io
 sudo rm -rf /var/lib/docker /etc/docker
-sudo groupdel docker
 sudo rm -rf /var/run/docker.sock
 sudo rm -rf /usr/local/bin/docker-compose
 sudo rm -rf /etc/docker
