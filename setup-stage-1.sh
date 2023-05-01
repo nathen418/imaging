@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script is acessable at this link: https://playantares.com/scripts/initial-setup-ubuntu.sh
+# This script is acessable at this link: https://antaresnetwork.com/scripts/setup-stage-1.sh
 
 # Prevent annoying needs restart popup 
 sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
