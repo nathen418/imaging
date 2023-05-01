@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# This script is acessable at this link: https://antaresnetwork.com/scripts/deldocker.sh
+
 read -p "YOU ARE ABOUT TO UNINSTALL DOCKER AND REMOVE ALL DOCKER CONTAINERS AND THEIR DATA. DO YOU WANT TO DO THIS? (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 read -p "Are you sure? (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 read -p "Really? This is the last chance to quit. (y/n)"  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
