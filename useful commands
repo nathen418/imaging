@@ -1,0 +1,2 @@
+sudo lvresize /dev/ubuntu-vg/ubnutu-lv =l+100%FREE -r 
+# Expands the lv and the underlying fs
