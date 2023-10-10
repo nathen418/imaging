@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script is acessable at this link: https://antaresnetwork.com/scripts/setup-stage-1.sh
+# This script is accessible at this link: https://antaresnetwork.com/scripts/setup-stage-1.sh
 
 # Prevent annoying needs restart popup 
 sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
@@ -11,7 +11,7 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Install common packages
-sudo apt install openssh-server git speedtest-cli fail2ban unattended-upgrades glances -y
+sudo apt install openssh-server git speedtest-cli docker.io neofetch  fail2ban unattended-upgrades glances -y
 sudo snap install bashtop
 
 # Update again
