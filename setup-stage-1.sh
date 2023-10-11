@@ -11,7 +11,7 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Install common packages
-sudo apt install openssh-server git speedtest-cli docker.io neofetch  fail2ban unattended-upgrades glances -y
+sudo apt install openssh-server git speedtest-cli docker.io neofetch fail2ban unattended-upgrades glances -y
 sudo snap install bashtop
 
 # Update again
@@ -23,8 +23,8 @@ sudo apt autoremove -y
 sudo passwd -l root
 
 # Disable password login over ssh
-sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
-sudo service sshd restart
+# sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
+# sudo service sshd restart
 
 # Extend ubuntu default fs to fill the disk
 sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
